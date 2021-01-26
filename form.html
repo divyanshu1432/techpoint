@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link href="techpoint.css" rel="stylesheet"/>
+</head>
+<body>
+
+<div class="container">
+  <h2>Centered Modal Example</h2>
+  <p>Center the modal vertically and horizontally within the page, with the .modal-dialog-centered class.</p>
+  <!-- Button to Open the Modal -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+    Open modal
+  </button>
+
+  <!-- The Modal -->
+		<div class="modal fade" id="myModal">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+				  
+					<!-- Modal Header -->
+						<div class="modal-header">
+							  <h1 class="mt-4 ml-auto">Become a Tutor</h1>
+							  <button type="button" class="close" data-dismiss="modal">&times;</button>
+						</div>
+					
+					<!-- Modal body -->
+					<div class="modal-body">
+						<form action="/action_page.php" class="was-validated">
+							<div class="form-group">
+								<label for="fname"> First Name :</label>
+								<input type="text" class="form-control" placeholder="" id="fname" required>
+								<div class="valid-feedback">It's valid</div>
+								<div class="invalid-feedback">The above field is compulsory</div>
+							</div>
+							<div class="form-group">
+								<label for="lname"> Last Name :</label>
+								<input type="text" class="form-control" placeholder="" id="lname" required>
+								<div class="valid-feedback">It's valid</div>
+								<div class="invalid-feedback">The above field is compulsory</div>
+							</div>
+							<div class="form-group">
+								<label for="email">Email ID : </label>
+								<input type="email" class="form-control" placeholder="" id="email" required>
+								<div class="valid-feedback">It's valid</div>
+								<div class="invalid-feedback">The above field is compulsory</div>
+							</div>
+							<div class="form-group">
+								<label for="phone">Moblie No. : </label>
+								<input type="text" class="form-control" placeholder="" id="phone" required>
+								<div class="valid-feedback">It's valid</div>
+								<div class="invalid-feedback">The above field is compulsory</div>
+							</div>
+							<div class="form-group form-check">
+								<label for="form-check-label" style="margin-left:-19px;"> Gender :</label><br>
+								<input type="radio" class="form-check-input" id="male">Male.<br>
+								<input type="radio" class="form-check-input" id="female">Female.<br>
+							</div>
+							<div class="form-group form-check">
+								<label for="form-check-label" style="margin-left:-19px;"> Available Time :</label><br>
+								<input type="radio" class="form-check-input" id="all">All<br>
+								<input type="radio" class="form-check-input" id="morning">Morning<br>
+								<input type="radio" class="form-check-input" id="evenng">Evening<br>
+							</div>
+							<div class="form-group">
+								<label for="pwd">Password : </label>
+								<input type="password" class="form-control" id="pwd" required>
+								<div class="valid-feedback">It's valid</div>
+								<div class="invalid-feedback">The above field is compulsory</div>
+							</div>
+							<div class="form-group">
+								<label for="pwd">Confirm Password (same as above) : </label>
+								<input type="password" class="form-control" id="pwd" required>
+								<div class="valid-feedback">It's valid</div>
+								<div class="invalid-feedback">The above field is compulsory</div>
+							</div>
+							<div class="form-group form-check">
+								<label for="form-check-label"></label><br>
+								<input type="checkbox" class="form-check-input" required>I hereby, declare that above given details are on account of my information.
+								<div class="valid-feedback">Thanks for confirming.</div>
+								<div class="invalid-feedback">The above field is compulsory</div>
+							</div><br>
+							<div class="text-center">
+								<a class="btn submit_btn">Submit</a>
+							</div>
+						</form>	
+					</div>
+					
+					<!-- Modal footer -->
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+  
+</div>
+
+
+/* Popup window starts*/
+
+.modal-header {
+    padding: 10px 10px 10px 10px;
+    border-bottom: 0;
+}
+.modal-header h1 {
+		font-family: Montserrat;
+		font-weight: 700;
+		font-size: 30px;
+		color: #3A3A3A;
+}
+.modal-body {
+    padding: 10px 40px 10px 40px;
+}
+.form-group label {
+		font-family: 'Roboto Condensed', sans-serif;
+		font-weight: 300;
+		font-size: 20px;
+		text-align: center;
+		color: #3a3a3a;
+}
+.submit_btn {
+    background: #F79B3C;
+    border-radius: 20px;
+    padding: 10px 80px;
+    letter-spacing: 0.35px;
+    color: #FFFFFF;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+	text-align:center;
+}
+.modal-footer {
+    padding: 10px;
+    border-top:0;
+}
+</body>
+</html>
